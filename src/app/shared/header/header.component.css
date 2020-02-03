@@ -1,0 +1,44 @@
+.scroll-page{
+    top: 0;
+    z-index: 1020;
+    background-color: #343a40 !important;
+}
+ 
+
+a {
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+}
+img {
+    height: 44px;
+    width: 44px;
+}
+
+.input-property {
+    width: 350px;
+}
+
+.pastille {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    border-radius: 50%;
+    background: #CD0037;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    display: inline-block;
+    margin: -20px 0 0 -17px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    line-height: 20px;
+    @media (min-width: 2559px) {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+}
+
+.property-title {
+    font-size: xx-large;
+    font-style: italic;
+}

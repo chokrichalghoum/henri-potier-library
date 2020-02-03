@@ -1,0 +1,41 @@
+<div class="empty-space"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div id="coverBook">
+        <div>
+          <div>
+            <img class="d-block w-100 img-property" src="{{ detailsBookService?.book?.cover }}" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="container">
+        <div class="section-title">
+          <h2>{{ detailsBookService?.book?.title }}</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-xs-6 col-sm-6">
+            <button
+              [disabled]="detailsBookService?.book?.quantity > 0"
+              class="btn btn--block "
+              (click)="basketService.addToBasket(detailsBookService?.book)"
+            >
+              {{ libelleConstantesService.BUTTON_ADD_BASCKET }}
+            </button>
+          </div>
+          <div class="col-12 col-xs-6 col-sm-6">
+            <a class="input"> {{ libelleConstantesService.PRICE }} : {{ detailsBookService?.book?.price }} €</a>
+          </div>
+        </div>
+        <div class="empty-space"></div>
+      </div>
+
+      <div *ngFor="let item of detailsBookService?.book?.synopsis">
+        <p *ngIf="item">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>

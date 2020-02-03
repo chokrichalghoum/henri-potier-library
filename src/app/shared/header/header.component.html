@@ -1,0 +1,27 @@
+<nav class="site-header sticky-top py-1 scroll-page">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <!--a class="py-2" (click)="goToHome()">
+         <img src="assets/img/logo.png"  alt="Henri Potier">
+      </a-->
+    <a class="py-2 property-title" (click)="goToHome()">{{ libelleConstantesService.TITLE_APP }}</a>
+
+    <a class="py-2 d-none d-block">
+      <div class="input-group md-form form-sm form-2 pl-0 input-property">
+        <input
+          class="form-control my-0 py-1 red-border"
+          type="text"
+          placeholder="Rechercher"
+          (input)="searchBook($event.target.value)"
+          aria-label="Search"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text red lighten-3" id="basic-text1"> <i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </a>
+    <a class="py-2" (click)="goToBasket()">
+      <img src="assets/img/book.png" alt="Henri Potier" />
+      <span *ngIf="basketService.listBook.length > 0" class="pastille" [innerHTML]="basketService.listBook.length"></span>
+    </a>
+  </div>
+</nav>

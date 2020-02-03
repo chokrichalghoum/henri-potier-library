@@ -1,0 +1,23 @@
+<div class="card-middle">
+  <ul class="cards">
+    <li class="cards__item" *ngFor="let book of books">
+      <div class="card">
+        <div class="card__image ">
+          <div class="empty-space"></div>
+          <img src="{{ book.cover }}" (click)="goToDetailsBook(book)" />
+        </div>
+        <div class="card__content">
+          <div class="card__title">{{ book.title }}</div>
+          <div class="empty-space"></div>
+          <p class="card__text">
+            {{ book.synopsisLabel }}
+          </p>
+          <span class="btn--block  price">{{ book.price }} €</span>
+          <button [disabled]="book.quantity > 0" class="btn btn--block " (click)="basketService.addToBasket(book)">
+            {{ libelleConstantesService.BUTTON_ADD_BASCKET }}
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

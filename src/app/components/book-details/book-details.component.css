@@ -1,0 +1,63 @@
+.img-property {
+  width: 400px !important;
+}
+
+.empty-space {
+  height: 30px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+.section-title .overlay {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.section-title p {
+  font-size: 22px;
+}
+.section-title hr {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #c9b81c;
+  color: #696969;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  background-color: #c9b81c;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
